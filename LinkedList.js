@@ -50,7 +50,7 @@ function LinkedList() {
     }
 
     this.removeAt = position => {
-        if(position <= -1 || position >= length){
+        if(position < 0 || position > length - 1){
             return null
         }
         let current = head
