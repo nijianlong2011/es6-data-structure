@@ -86,18 +86,11 @@ function LinkedList() {
         return -1
     }
 
-    this.isEmpty = () => {
-        return length === 0
-    }
+    this.isEmpty = () => length === 0
 
+    this.size = () => length
 
-    this.size = () => {
-        return length
-    }
-
-    this.getHead = () => {
-        return head
-    }
+    this.getHead = () => head
 
     this.toString = () => {
         let current = head,
@@ -110,13 +103,7 @@ function LinkedList() {
         return arr.join(',')
     }
 
-
-    this.print = () => {
-        console.info(this.toString())
-    }
-
-
-    
+    this.print = () => console.info(this.toString())
 }
 
 
