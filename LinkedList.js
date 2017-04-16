@@ -71,7 +71,8 @@ function LinkedList() {
     }
 
     this.remove = element => {
-        
+        const index = this.indexOf(element)
+        return this.removeAt(index)
     }
 
     this.indexOf = element => {
